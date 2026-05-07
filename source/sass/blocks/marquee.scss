@@ -1,0 +1,36 @@
+.marquee {
+  overflow: hidden;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #F54932;
+  padding: 18px 0;
+  text-transform: uppercase;
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: scroll 15s linear infinite;
+}
+
+.marquee__track span {
+  white-space: nowrap;
+  padding-right: 12px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee {
+    font-size: 16px;
+    line-height: 110%;
+    padding: 10px 0;
+  }
+}

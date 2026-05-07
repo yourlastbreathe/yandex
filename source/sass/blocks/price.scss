@@ -1,0 +1,76 @@
+.price {
+  padding: 80px 0 200px 0;
+
+  &__box {
+    max-width: 704px;
+    font-family: "Golos-Text";
+  }
+
+  &__description {
+    color: #3057A2;
+    margin: 0;
+    text-align: start;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 17px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 135%;
+    max-width: 764px;
+    text-align: start;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 64px;
+
+    &--subtitle {
+      max-width: 680px;
+      font-family: "Merriweather";
+    }
+
+    &--red {
+      font-weight: 500;
+      color: #F54932;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .price {
+    padding: 24px;
+
+    &__box {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .price {
+    padding: 48px 18px 120px 18px;
+
+    &__title {
+      font-size: 28px;
+      line-height: 135%;
+      display: flex;
+      flex-direction: column;
+      gap: 261px;
+
+      &--subtitle {
+        display: block;
+        text-align: start;
+      }
+    }
+  }
+}

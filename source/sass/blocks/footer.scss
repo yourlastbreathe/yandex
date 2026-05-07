@@ -1,0 +1,18 @@
+.footer {
+  background-color: #E9DED4;
+  padding: 40px 0 72px 0;
+
+  &__description {
+    font-family: "Golos-Text";
+    margin: 0;
+    font-size: 16px;
+    text-align: start;
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 24px;
+  }
+}

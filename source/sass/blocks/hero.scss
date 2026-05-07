@@ -1,0 +1,142 @@
+.hero {
+  background-color: #E9DED4;
+  padding: 0 0 130px 0;
+  background-image: url("../../img/sun_desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  &__wrapper {
+    width: 542px;
+  }
+
+  &__button {
+    font-size: 16px;
+    font-family: "Golos-Text";
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 130%;
+    width: 263px;
+    border-radius: 66px;
+    padding: 20px 48px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: #FBCE51;
+      color: #1f1f1f;
+    }
+
+    &--secondary {
+      background-color: transparent;
+      color: #1f1f1f;
+      border: 2px solid #1f1f1f;
+
+      &:hover {
+        background-color: #1f1f1f;
+        color: #ffffff;
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-family: "Golos-Text";
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    line-height: 110%;
+    text-align: start;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-weight: 400;
+
+    &--center {
+      text-align: center;
+    }
+
+    &--right {
+      text-align: end;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    background-image: url(../../img/sun_mob.svg);
+    background-position: center;
+    background-size: contain;
+
+    &__wrapper {
+      margin: 0 auto;
+    }
+
+    &__description {
+      display: block;
+    }
+
+    &__button {
+      display: block;
+      width: 100%;
+
+      &--secondary {
+        background-color: rgba(255, 255, 255, 0.9);
+        border: none;
+      }
+
+      &-wrapper {
+        flex-direction: column;
+        gap: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 18px 291px 18px;
+    background-position: right 0 bottom 20px;
+
+    &__title {
+      font-size: 36px;
+      line-height: 110%;
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+
+    &__wrapper {
+      max-width: 335px;
+    }
+
+    &__description {
+      text-align: start;
+      margin-bottom: 32px;
+    }
+
+    &__button {
+      padding: 18px 43px;
+
+      &-wrapper {
+        gap: 14px;
+      }
+    }
+  }
+}
