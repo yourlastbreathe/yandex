@@ -1,7 +1,7 @@
 .tournament {
 
   &__section {
-    padding: 0 0 140px 0;
+    padding: 0 0 134px 0;
   }
 
   &__wrapper {
@@ -138,7 +138,7 @@
   &__title {
     margin: 0;
     opacity: 0.6;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   &__details-button {
@@ -191,7 +191,11 @@
   .tournament {
 
     &__section {
-      padding: 0 18px 100px 18px;
+      padding: 0 18px 92px 18px;
+    }
+
+    &__wrapper {
+      gap: 33px;
     }
 
     &__title {

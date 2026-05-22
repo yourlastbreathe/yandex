@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   text-align: start;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
 
   &__row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 309px 352px;
     border-bottom: 1px solid #ddd;
     position: relative;
     line-height: 56px;
@@ -41,14 +41,31 @@ dd {
 @media (max-width: 768px) {
   .table {
 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-bottom: 22px;
+
     &__row {
       display: flex;
       flex-direction: column;
+      gap: 12px;
+      margin-bottom: 16px;
+
+      &--horizontal {
+        flex-direction: row;
+      }
     }
   }
 
   dd {
     padding: 0;
     border: none;
+    line-height: 120%;
+  }
+
+  dt {
+    line-height: 120%;
   }
 }

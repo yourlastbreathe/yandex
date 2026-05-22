@@ -17,7 +17,7 @@
     line-height: 130%;
     width: 263px;
     border-radius: 66px;
-    padding: 20px 48px;
+    padding: 14px 48px;
     display: flex;
     flex-direction: column;
     color: #ffffff;
@@ -54,7 +54,7 @@
     flex-direction: column;
     text-align: center;
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 31px;
   }
 
   &__title {
@@ -124,6 +124,7 @@
 
     &__wrapper {
       max-width: 335px;
+      height: 402px;
     }
 
     &__description {
@@ -132,7 +133,7 @@
     }
 
     &__button {
-      padding: 18px 43px;
+      padding: 13px 43px;
 
       &-wrapper {
         gap: 14px;
